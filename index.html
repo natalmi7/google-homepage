@@ -5,24 +5,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header class="header">
-        <a href="#">About</a>
-        <a href="#">Store</a>
-    </header>
 
+<header class="header">
+    <div><a href="#">About</a></div>
+    <div><a href="#">Store</a></div>
+    <div><a href="#">Gmail</a></div>
+    <div><a href="#">Images</a></div>
+    <div><a href="#">square</a></div>
+    <div><a href="#">profile</a></div>
+</header>
+
+<body>
     <div id="logo">
         <img src="https://sites.google.com/site/dekchysite95/_/rsrc/1480944463347/extra-credit/google.png">
     </div>
 
-    <div id="search-bar">
-        <input type="text" alt="type here"></input>
+    <div class="search-bar">
+        <input id="search-input" type="text" value=""></input>
     </div>
 
     <div id="buttons">
         <center>
-            <input type="button" value="Google Search">
-            <input type="button" value="I'm Feeling Lucky">
+            <input class="submit-button" type="submit" value="Google Search" label="Google Search">
+            <input class="submit-button" type="submit" value="I'm Feeling Lucky" label="I'm Feeling Lucky">
         </center>
     </div>
 
