@@ -51,16 +51,16 @@ img {
     padding-left: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    display: flex;
 }
 
 .search-bar:hover {
-    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
 #search-input {
     border: none;
     display: flex;
-    align-items: flex-start;
     width: 380px;
 }
 
@@ -104,3 +104,33 @@ img {
     padding: 0px 30px;
     border-top: solid 1px #c1c3c7;
 }
+
+#magnifying-glass {
+    font-size: 1.3em;
+    display: flex;
+    width: 0.4em;
+    box-sizing: content-box;
+    height: 0.4em;
+    border: 0.1em solid #9aa0a6;
+    position: relative;
+    border-radius: 0.35em;
+  }
+  
+  #magnifying-glass:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -0.25em;
+    bottom: -0.1em;
+    border-width: 0;
+    background: #9aa0a6;
+    width: 0.35em;
+    height: 0.08em;
+    transform: rotate(45deg);
+  }
+
+  #box {
+      margin-left: -25px;
+      margin-right: 15px;
+      padding: auto;
+  }
